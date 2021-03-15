@@ -1,5 +1,5 @@
 class Taup < Formula
-  desc "The TauP Toolkit: Flexible Seismic Travel-Time and Raypath Utilities"
+  desc "Flexible Seismic Travel-Time and Raypath Utilities"
   homepage "https://www.seis.sc.edu/TauP/"
   url "https://www.seis.sc.edu/downloads/TauP/prerelease/TauP-2.5.0-SNAPSHOT.tgz"
   sha256 "402bd4780b8cc940ded684d706324908696de007b671f2f3bd70f4c3e15c554e"
