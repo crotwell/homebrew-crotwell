@@ -5,8 +5,6 @@ class Taup < Formula
   sha256 "5412c96516dab825e77791ed00c28d5ddcb2f66b5d19dd4aad8cbb60f36f1b66"
   license "LGPL-3.0-or-later"
 
-  bottle :unneeded
-
   def install
     rm_f Dir["bin/*.bat"]
     rm_f Dir["bin/taup_*"]
