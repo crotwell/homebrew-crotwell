@@ -5,8 +5,6 @@ class Seisfile < Formula
   sha256 "03709a0eee72ff8a5c94f73d6f854efebb79c3fc5571df30280c830c120e6ae3"
   license "LGPL-3.0-or-later"
 
-  bottle :unneeded
-
   def install
     rm_f Dir["bin/*.bat"]
     man1.install "docs/manpage/seisfile.1"
