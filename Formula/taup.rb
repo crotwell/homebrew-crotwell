@@ -1,7 +1,7 @@
 class Taup < Formula
   desc "Flexible Seismic Travel-Time and Raypath Utilities"
   homepage "https://www.seis.sc.edu/TauP/"
-  url "https://github.com/crotwell/TauP/releases/download/v2.5.1/TauP-2.6.0.tgz"
+  url "https://github.com/crotwell/TauP/releases/download/v2.6.0/TauP-2.6.0.tgz"
   sha256 "1ce62415b4c4acaeb3f5f2421e5f84260e6e502fd33eabccc58b5ed713c417c9"
   license "LGPL-3.0-or-later"
 
