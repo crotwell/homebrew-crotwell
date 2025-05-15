@@ -1,13 +1,12 @@
 class Taup < Formula
   desc "Flexible Seismic Travel-Time and Raypath Utilities"
   homepage "https://www.seis.sc.edu/TauP/"
-  url "https://github.com/crotwell/TauP/releases/download/v2.6.1/TauP-2.6.1.tgz"
-  sha256 "4041e3e9cbbbfde4196723b2e7e81f30800370056912b6be664a070526d99494"
+  url "https://zenodo.org/records/15116393/files/TauP-3.0.0.tar.gz?download=1"
+  sha256 "d7cc97b1eaf04e1e4861cb9698f8b7439ee47c806926e331972122f75666633f"
   license "LGPL-3.0-or-later"
 
   def install
     rm_f Dir["bin/*.bat"]
-    rm_f Dir["bin/taup_*"]
     libexec.install %w[bin docs lib src]
     env = if Hardware::CPU.arm?
       Language::Java.overridable_java_home_env("11")
