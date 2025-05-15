@@ -4,6 +4,7 @@ class Taup < Formula
   url "https://zenodo.org/records/15116393/files/TauP-3.0.0.tar.gz?download=1"
   sha256 "d7cc97b1eaf04e1e4861cb9698f8b7439ee47c806926e331972122f75666633f"
   license "LGPL-3.0-or-later"
+  depends_on "openjdk"
 
   def install
     rm Dir["bin/*.bat"]
