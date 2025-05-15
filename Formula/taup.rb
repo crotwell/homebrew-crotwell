@@ -6,7 +6,7 @@ class Taup < Formula
   license "LGPL-3.0-or-later"
 
   def install
-    rm_f Dir["bin/*.bat"]
+    rm Dir["bin/*.bat"]
     libexec.install %w[bin docs lib src]
     env = if Hardware::CPU.arm?
       Language::Java.overridable_java_home_env("11")
