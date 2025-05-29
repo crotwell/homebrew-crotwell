@@ -1,19 +1,17 @@
-class Taup < Formula
+class Taup2 < Formula
   desc "Flexible Seismic Travel-Time and Raypath Utilities"
   homepage "https://www.seis.sc.edu/TauP/"
-  url "https://zenodo.org/records/15426279/files/TauP-3.0.1.zip"
-  sha256 "569a5e1d5d9268e57e6f08ace451946b8264474a951d64bf77283523bac3f1be"
+  url "https://github.com/crotwell/TauP/releases/download/v2.6.1/TauP-2.6.1.tgz"
+  sha256 "4041e3e9cbbbfde4196723b2e7e81f30800370056912b6be664a070526d99494"
   license "LGPL-3.0-or-later"
-  revision 3
-  depends_on "openjdk"
+  depends_on "openjdk@11"
 
   def install
-    rm Dir["bin/*.bat"]
+    rm_f Dir["bin/*.bat"]
+    rm_f Dir["bin/taup_*"]
     libexec.install %w[bin docs lib src]
     env = Language::Java.overridable_java_home_env
-    (bin/"taup").write_env_script libexec/"bin/taup", env
-    cp "./taup_completion", "./taup_completion.bash"
-    bash_completion.install "./taup_completion.bash"
+    (bin/"taup2").write_env_script libexec/"bin/taup", env
   end
 
   test do
