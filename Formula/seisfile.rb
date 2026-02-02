@@ -1,8 +1,8 @@
 class Seisfile < Formula
   desc "Library for reading and writing seismic file formats in java"
   homepage "https://www.seis.sc.edu/seisFile.html"
-  url "https://github.com/crotwell/seisFile/releases/download/v2.3.2/seisFile-2.3.2.zip"
-  sha256 "4091c8d9723fe0a6d709f682d6f726058645b387563368204a5a9fc4d1fde1fa"
+  url "https://github.com/crotwell/seisFile/releases/download/v2.3.3/seisFile-2.3.3.zip"
+  sha256 "252b5c98a96c7ac19de2ce2811881c83f57ff1a641fba4bfc7797a52590ac65b"
   license "LGPL-3.0-or-later"
   depends_on "openjdk"
 
